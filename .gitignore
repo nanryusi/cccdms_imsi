@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### yaml ###
-applicaton*.yaml
+!**/src/main/**/applicaton*.yaml
