@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zerofanta.cccdms.sample.mapper.SampleMapper">
+
+    <select id="selectListCnt" parameterType="SampleVo" resultType="int">
+        SELECT
+            COUNT(*) AS TOTCNT
+        FROM
+            tb_test
+        WHERE
+            data01 LIKE #{data01} ||'%'
+    </select>
+
+    <select id="selectList" parameterType="SampleVo" resultType="SampleVo">
+        SELECT
+            data01
+            ,data02
+            ,data03
+            ,data04
+            ,data05
+        FROM
+            tb_test
+        WHERE
+            data01 LIKE #{data01} ||'%'
+    </select>
+
+</mapper>
