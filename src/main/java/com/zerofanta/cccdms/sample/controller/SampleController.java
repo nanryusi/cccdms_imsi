@@ -2,6 +2,8 @@ package com.zerofanta.cccdms.sample.controller;
 
 import com.zerofanta.cccdms.sample.domain.SampleVo;
 import com.zerofanta.cccdms.sample.service.SampleService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,12 +20,19 @@ import java.util.List;
 @RequestMapping("/sample")
 public class SampleController {
 
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     private SampleService sampleService;
 
     @RequestMapping("list")
     public ModelAndView list(HttpServletRequest request, SampleVo sVo) throws Exception{
         ModelAndView mv = new ModelAndView();
+
+        //로그 테스트
+        logger.debug("디버그");
+        logger.info("인포");
+        logger.warn("경고");
 
         //샘플데이터
         sVo.setData01("내용");

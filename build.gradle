@@ -39,6 +39,9 @@ dependencies {
     /*jsp 관련*/
     compile('org.apache.tomcat.embed:tomcat-embed-jasper')
     compile('javax.servlet:jstl')
+
+    /*Log4j 관련*/
+    compile('org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16')
 }
 
 test {
