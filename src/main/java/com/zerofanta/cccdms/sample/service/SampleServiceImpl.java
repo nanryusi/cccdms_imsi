@@ -14,18 +14,18 @@ import java.util.List;
  */
 @Service
 @Transactional
-public class SampleServiceImpl implements SampleService{
+public class SampleServiceImpl implements SampleService {
 
-    @Autowired
-    private SampleMapper sampleMapper;
+  @Autowired
+  private SampleMapper sampleMapper;
 
-    @Override
-    public int searchListCnt(SampleVo sVo) throws Exception {
-        return sampleMapper.selectListCnt(sVo);
-    }
+  @Override
+  public int searchListCnt(SampleVo sVo) throws Exception {
+    return sampleMapper.selectListCnt(sVo);
+  }
 
-    @Override
-    public List<SampleVo> searchList(SampleVo sVo) throws Exception {
-        return sampleMapper.selectList(sVo);
-    }
+  @Override
+  public List<SampleVo> searchList(SampleVo sVo) throws Exception {
+    return sampleMapper.selectList(sVo);
+  }
 }

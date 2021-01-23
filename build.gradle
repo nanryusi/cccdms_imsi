@@ -40,6 +40,11 @@ dependencies {
     compile('org.apache.tomcat.embed:tomcat-embed-jasper')
     compile('javax.servlet:jstl')
 
+    /*json object*/
+    //compile('com.fasterxml.jackson.core:jackson-core:2.12.1')
+    //compile('com.fasterxml.jackson.core:jackson-databind:2.12.1')
+    //compile('com.fasterxml.jackson.core:jackson-annotations:2.12.1')
+
     /*Log4j 관련*/
     compile('org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16')
 }

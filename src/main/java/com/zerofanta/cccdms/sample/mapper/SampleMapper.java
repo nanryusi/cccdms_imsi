@@ -14,7 +14,7 @@ import java.util.List;
 @Mapper
 public interface SampleMapper {
 
-    int selectListCnt(SampleVo sVo) throws Exception;
+  int selectListCnt(SampleVo sVo) throws Exception;
 
-    List<SampleVo> selectList(SampleVo sVo) throws Exception;
+  List<SampleVo> selectList(SampleVo sVo) throws Exception;
 }

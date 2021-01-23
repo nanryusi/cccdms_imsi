@@ -11,9 +11,9 @@ import lombok.Setter;
 @Setter
 public class SampleVo {
 
-    private String data01;
-    private String data02;
-    private String data03;
-    private String data04;
-    private String data05;
+  private String data01;
+  private String data02;
+  private String data03;
+  private String data04;
+  private String data05;
 }

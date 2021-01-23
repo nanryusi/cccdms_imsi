@@ -10,8 +10,8 @@ import java.util.List;
  */
 public interface SampleService {
 
-    int searchListCnt(SampleVo sVo) throws Exception;
+  int searchListCnt(SampleVo sVo) throws Exception;
 
-    List<SampleVo> searchList(SampleVo sVo) throws Exception;
+  List<SampleVo> searchList(SampleVo sVo) throws Exception;
 
 }
